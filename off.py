@@ -1,8 +1,5 @@
 #!/usr/bin/python
-import serial
-
-ser = serial.Serial('/dev/ttyUSB0', 2000000)
-print(ser.name)
+from base import *
 
 ser.write(b"\xFE")
 ser.close()
